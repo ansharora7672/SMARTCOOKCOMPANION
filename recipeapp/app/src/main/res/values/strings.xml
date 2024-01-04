@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">RecipeApplication</string>
+    <string name="description" translatable="false">Description of the image for visually impaired users</string>
+</resources>

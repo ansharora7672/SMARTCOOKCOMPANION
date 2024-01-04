@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/card_shape"
+    android:layout_margin="20dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="15dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/categoryimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pizza_sample" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tittle_food"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-20dp"
+        android:text="This is sample txt"
+        android:fontFamily="@font/baloo_bhai"
+        android:maxLength="40"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <ImageView
+        android:id="@+id/clockcategory"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/clock_icon"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/tittle_food"
+        app:srcCompat="@drawable/clock_icon" />
+
+    <TextView
+        android:id="@+id/timecategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="30 Mins"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:fontFamily="@font/baloo_bhai"
+        app:layout_constraintStart_toEndOf="@+id/clockcategory"
+        app:layout_constraintTop_toBottomOf="@+id/tittle_food" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="4dp"
+        android:padding="5dp"
+        android:src="@drawable/card_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/card_btn"
+        app:tint="#019267" />
+</androidx.constraintlayout.widget.ConstraintLayout>

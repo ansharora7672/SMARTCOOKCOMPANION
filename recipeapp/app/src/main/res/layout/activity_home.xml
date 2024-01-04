@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".HomeActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Culinary Genres"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/card_back_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        app:srcCompat="@drawable/menu_home" />
+
+    <ImageView
+        android:id="@+id/imageViewBlurred"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="80dp"
+
+        android:contentDescription="@string/description"
+        android:rotationX="-4"
+        android:rotationY="-21"
+        android:src="@drawable/homeasset1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="casual"
+        android:text="Bon"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="casual"
+        android:text="Appétit"
+        android:textColor="#4CAF50"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Which dish are you in the mood to cook today?"
+        android:textColor="#4E4E4E"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/searchview"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Search Recipe"
+        android:inputType="none"
+        android:paddingStart="50dp"
+        android:textColorHint="#5A5858"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/searchicon"
+        android:layout_width="32dp"
+        android:layout_height="34dp"
+
+        android:contentDescription="@string/description"
+        android:paddingStart="7dp"
+        android:src="@drawable/search_ic"
+        app:layout_constraintBottom_toBottomOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/search"
+        app:layout_constraintTop_toTopOf="@+id/search"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintTop_toTopOf="@+id/horizontalScrollView">
+
+            <ImageView
+                android:id="@+id/saladview"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/category_card_bc"
+                android:padding="5dp"
+                app:srcCompat="@drawable/category_salad" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saladview"
+                android:layout_alignStart="@id/saladview"
+                android:layout_alignEnd="@id/saladview"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="-20dp"
+                android:text="Salad"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/MainCourse"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/saladview"
+                android:background="@drawable/category_card_bc"
+                android:padding="5dp"
+                app:srcCompat="@drawable/drinks" />
+
+            <TextView
+                android:id="@+id/maincoursetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MainCourse"
+                android:layout_alignEnd="@id/MainCourse"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="-20dp"
+                android:text="MainCourse"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/shakes"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/MainCourse"
+                android:background="@drawable/category_card_bc"
+                android:padding="5dp"
+                app:srcCompat="@drawable/catergory_drinks" />
+
+            <TextView
+                android:id="@+id/shaketext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shakes"
+                android:layout_alignStart="@id/shakes"
+                android:layout_alignEnd="@id/shakes"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="-20dp"
+                android:text="Shakes"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/desertview"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/shakes"
+                android:background="@drawable/category_card_bc"
+                android:padding="5dp"
+                app:srcCompat="@drawable/category_dessert" />
+
+            <TextView
+                android:id="@+id/Deserttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desertview"
+                android:layout_alignStart="@id/desertview"
+                android:layout_alignEnd="@id/desertview"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="-20dp"
+                android:text="Desert"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Try these"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="397dp"
+        android:layout_height="234dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="1.0"
+
+        tools:listitem="@layout/trythese_rv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
